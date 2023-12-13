@@ -31,6 +31,8 @@ var isAnagram = function (s, t) {
       counter[t[i]] -= 1;
     } else return false;
   }
-  const output = Object.values(counter).every((x) => x === 0);
+  const output = Object.values(counter).every((x) => x === 0); //Boolean
   return output;
 };
+
+//Faster. Runtime of o(n)
