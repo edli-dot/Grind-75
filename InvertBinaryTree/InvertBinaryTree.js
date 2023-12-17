@@ -21,3 +21,15 @@ var invertTree = function (root) {
 
   return root;
 };
+
+//Runtime of o(n) because have to visist all the nodes
+
+var invertTree = function (root) {
+  if (!root) return root;
+
+  [root.left, root.right] = [invertTree(root.right), invertTree(root.left)];
+
+  return root;
+};
+
+//More concise way of writing this. Destructure
