@@ -17,6 +17,5 @@ var maxWidthOfVerticalArea = function (points) {
     //Returns the largest numbers of the numbers given as inputs
     maxWidth = Math.max(maxWidth, width);
   }
-
   return maxWidth;
 };
