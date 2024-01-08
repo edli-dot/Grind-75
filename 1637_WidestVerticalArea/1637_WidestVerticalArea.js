@@ -13,7 +13,7 @@ var maxWidthOfVerticalArea = function (points) {
   let maxWidth = 0;
   for (let i = 1; i < xCoordinates.length; i++) {
     //Calculate the current width
-    let width = xCoordinates[i] - xCoordinates[i - 1];
+    let widthh = xCoordinates[i] - xCoordinates[i - 1];
     //Returns the largest numbers of the numbers given as inputs
     maxWidth = Math.max(maxWidth, width);
   }
