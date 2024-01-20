@@ -16,3 +16,9 @@ var lengthOfLongestSubstring = function (s) {
   }
   return count;
 };
+
+/**
+ * if character isn't in set then add it
+ * while adding a new position for the string, if this character already in the string, continue to delete until there is only unique characters
+ * modify count to be the max
+ */

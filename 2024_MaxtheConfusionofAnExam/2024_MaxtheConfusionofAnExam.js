@@ -9,7 +9,6 @@ var maxConsecutiveAnswers = function (answerKey, k) {
   let maxCount = 0;
   let tCount = 0;
   let fCount = 0;
-
   // Iterate through the answerKey
   for (let right = 0; right < answerKey.length; right++) {
     // Update counts based on the current character
@@ -18,7 +17,6 @@ var maxConsecutiveAnswers = function (answerKey, k) {
     } else {
       fCount++;
     }
-
     // Check if the current window violates the constraint
     while (tCount + k < right - left + 1 && fCount + k < right - left + 1) {
       // Adjust counts and move the left pointer
@@ -29,13 +27,11 @@ var maxConsecutiveAnswers = function (answerKey, k) {
       }
       left++;
     }
-
     // Update maxCount with the length of the current valid window
     if (right - left + 1 > maxCount) {
       maxCount = right - left + 1;
     }
   }
-
   // Return the maximum consecutive count
   return maxCount;
 };
