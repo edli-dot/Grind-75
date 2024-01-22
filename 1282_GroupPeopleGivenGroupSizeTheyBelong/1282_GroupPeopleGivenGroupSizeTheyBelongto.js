@@ -20,7 +20,7 @@ var groupThePeople = function (groupSizes) {
     //If so, push what we have already into the answer
     //delete hash to save on memory
     if (temp_group[size].length === size) {
-      result.push([temp_group[size]]);
+      result.push([...temp_group[size]]);
       delete temp_group[size];
     }
   }
