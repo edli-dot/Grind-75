@@ -17,7 +17,7 @@ var twoSum = function (nums, target) {
 
 var twoSum2 = function (nums, target) {
   // Create an empty hash map to store the numbers and their indices
-  const mp = {};
+  const cache = {};
 
   // Iterate through the array 'nums'
   for (let i = 0; i < nums.length; i++) {
@@ -25,13 +25,13 @@ var twoSum2 = function (nums, target) {
     const complement = target - nums[i];
 
     // Check if the complement is already in the hash map
-    if (complement in mp) {
+    if (complement in cache) {
       // If found, return the current index 'i' and the index of the complement
-      return [i, mp[complement]];
+      return [i, cache[complement]];
     }
 
     // If the complement is not found, add the current number and its index to the hash map
-    mp[nums[i]] = i;
+    cache[nums[i]] = i;
   }
 };
 
