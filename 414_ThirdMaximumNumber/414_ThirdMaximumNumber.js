@@ -7,16 +7,13 @@ var thirdMax = function (nums) {
   let compare = new Set(nums);
   for (let num of compare) {
     if (num > third) {
-      first = second;
-      second = third;
-      third = num;
+      //Can use destructuring to modify all the thigns isntead of doing one at a time
+      [first, second, third] = [second, third, num];
     } else if (num > second) {
-      first = second;
-      second = num;
+      [first, second] = [second, num];
     } else if (num > first) {
       first = num;
     }
   }
-
   return first != -Infinity ? first : third;
 };
