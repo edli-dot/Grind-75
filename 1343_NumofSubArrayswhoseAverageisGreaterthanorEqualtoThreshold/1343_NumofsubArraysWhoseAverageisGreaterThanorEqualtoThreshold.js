@@ -19,3 +19,19 @@ var numOfSubarrays = function (arr, k, threshold) {
   }
   return answer;
 };
+
+const numOfSubarrays = (nums, k, threshold) => {
+  let count = 0,
+    windowSize = 0,
+    windowSum = 0;
+  for (let i = 0; i < nums.length + 1; i++) {
+    if (windowSize === k) {
+      if (windowSum / k >= threshold) count++;
+      windowSum -= nums[i - k];
+      windowSize--;
+    }
+    windowSum += nums[i];
+    windowSize++;
+  }
+  return count;
+};
