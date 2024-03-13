@@ -11,6 +11,7 @@ var divisorSubstrings = function (num, k) {
   for (let i = 0; i < num.length - k + 1; i++) {
     let beauty = num.slice(i, i + k);
     //The Usage of continue is to move on to the next increment within the for loop
+    //Thought to use a hash table to speed up computation time
     if (cache[beauty]) {
       answer++;
       continue;
