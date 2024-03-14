@@ -22,3 +22,7 @@ var characterReplacement = function (s, k) {
   }
   return answer;
 };
+
+//this required more logic to think about
+//initial i thought to check the key values, and if more than one value exceeded k, then we ahve an issue
+//this current implementation is much simplier
