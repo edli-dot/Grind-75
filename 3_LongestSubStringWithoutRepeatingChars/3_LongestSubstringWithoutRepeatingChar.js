@@ -22,3 +22,5 @@ var lengthOfLongestSubstring = function (s) {
  * while adding a new position for the string, if this character already in the string, continue to delete until there is only unique characters
  * modify count to be the max
  */
+
+module.exports = lengthOfLongestSubstring;
