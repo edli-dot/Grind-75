@@ -16,3 +16,5 @@ var dailyTemperatures = function (temperatures) {
   }
   return answer;
 };
+
+//This is essentially a monotonic stack
