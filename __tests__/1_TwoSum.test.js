@@ -40,3 +40,6 @@ describe('twoSum2', () => {
     expect(result).toEqual(expect.arrayContaining([0, 1]));
   });
 });
+
+//jest __tests__/1_TwoSum.test.js
+//command for only singular test to run
