@@ -25,3 +25,5 @@ var findMin = function (nums) {
  * edge case: single value return itself
  * undergo a standard binary search
  */
+
+module.exports = findMin;
