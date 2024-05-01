@@ -25,3 +25,6 @@ var reverseOnlyLetters = function (s) {
   }
   return s.join('');
 };
+
+//can write helper functions w/in the problem to help
+//essentially just a two pointer w/ array manipulation
