@@ -12,7 +12,7 @@ var deleteMiddle = function (head) {
     fast = fast.next.next;
   }
 
-  // Delete the middle node
+  // delete the middle node
   slow.next = slow.next.next;
 
   return head;
