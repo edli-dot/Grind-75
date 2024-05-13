@@ -12,9 +12,11 @@
  */
 var evaluateTree = function (root) {
   if (!root) return null;
+  //base cases
   if (root.val == 0) return false;
   if (root.val == 1) return true;
 
+  //recursion logic
   if (root.val == 2) {
     return evaluateTree(root.left) || evaluateTree(root.right);
   } else if (root.val === 3) {
