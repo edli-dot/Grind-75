@@ -18,7 +18,7 @@ class Solution {
         Solution solution = new Solution();
         int[] nums = {2, 7, 11, 15};
         int target = 26;
-        int[] result = solution.twoSum(nums, target); //call upon class Solution and its method twoSum; passing in two arguments
+        int[] result = solution.twoSum(nums, target); //call upon class Solution and its method twoSum; passing in two
         
         // Print the result
         System.out.println("Indices: " + result[0] + ", " + result[1]);
