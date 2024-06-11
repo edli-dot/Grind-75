@@ -22,3 +22,18 @@ var minimumOperations = function (nums) {
  * each move subtract the minumum of the array but have to filter out 0's or else we have an infinite loop
  *
  */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var minimumOperations = function (nums) {
+  let cache = new Set(nums);
+  return cache.has(0) ? cache.size - 1 : cache.size;
+};
+
+/**
+ * interesting thought
+ * can use a set to pull up the number of unique numbers in the array
+ * just have to account if there is a zero in the array b/c no step is needed in order to convert that value to zero
+ */
