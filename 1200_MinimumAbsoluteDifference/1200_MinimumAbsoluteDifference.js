@@ -17,3 +17,9 @@ var minimumAbsDifference = function (arr) {
   }
   return cache;
 };
+
+/**
+ * can also perform two for loops
+ * first one calculates the difference between each adjacent
+ * second one pushes in the pair whose difference is equal to the min diff
+ */
