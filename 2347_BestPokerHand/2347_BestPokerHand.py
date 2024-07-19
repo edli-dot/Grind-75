@@ -9,6 +9,9 @@ class Solution:
         cache = {}
         pairStatus = False
         for rank in ranks:
+            # js equivalent of cache[rank[i]] || 0
+            # can't do cache[rank[i]] in py bc it will raise a KeyError if not found in dictionary
+            # other lanugages ight return null ort defined
             cache[rank] = cache.get(rank, 0) + 1
             if cache[rank] == 3:
                 return "Three of a Kind"
