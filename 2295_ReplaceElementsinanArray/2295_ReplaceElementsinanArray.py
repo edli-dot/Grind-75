@@ -9,5 +9,5 @@ class Solution:
         return nums
 """
 another instance of default dictionary int to provide 
-instead of iterating and deconstructing in the loop, you can deconstructure in the actual for loop[]
+instead of iterating and deconstructing in the loop, you can deconstructure in the actual for loop
 """
